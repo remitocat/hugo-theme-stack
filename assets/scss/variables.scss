@@ -53,11 +53,17 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 /**
 *   Global font family
 */
-:root {
-    --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue";
-    --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
+@font-face {
+  font-family: "Koruri";
+  src: url("//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot");
+  src: url("//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot?#iefix") format("embedded-opentype");
+  src: url("//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.woff") format("woff"),
+       url("//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.ttf") format("truetype");
+  src: url(//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.woff) format("woff");
+}
 
-    --base-font-family: "Lato", var(--sys-font-family), var(--zh-font-family), sans-serif;
+:root {
+    --base-font-family: "Lato", "Koruri", sans-serif;
     --code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
