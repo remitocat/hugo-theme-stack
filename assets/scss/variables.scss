@@ -55,11 +55,16 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 */
 @font-face {
   font-family: "Koruri";
-  src: url("//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot");
-  src: url("//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot?#iefix") format("embedded-opentype");
-  src: url("//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.woff") format("woff"),
-       url("//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.ttf") format("truetype");
-  src: url(//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.woff) format("woff");
+  src: url("/fonts/Koruri/Koruri-Regular.woff") format("woff"),
+       url("/fonts/Koruri/Koruri-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Koruri";
+  src: url("/fonts/Koruri/Koruri-Bold.woff") format("woff"),
+       url("/fonts/Koruri/Koruri-Bpld.ttf") format("truetype");
+  font-weight: bold;
 }
 
 :root {
